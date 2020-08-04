@@ -1,11 +1,11 @@
 <script>
-	let name = "John";
-	let points = 200;
+	export let name;
+	import Banner from './banner.svelte';
 </script>
 
 <main>
-	<h1>{name}</h1>
-	<h3>{points}</h3>
+<Banner></Banner>
+	<h1>Hello 你好 {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 
