@@ -34,7 +34,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .wrapper header .profilepic {
-    margin: 10px;
+    margin: 10px auto 10px auto;
     width: 250px;
     height: 250px;
     background: #ececec;
@@ -43,7 +43,7 @@
             box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(94, 104, 121, 0.288);
   }
   .wrapper header .name {
-    font-size: 30px;
+    font-size: 36px;
     color: #515152;
     text-align: center;
     margin: 30px auto 30px auto;
@@ -107,7 +107,6 @@
   }
   .wrapper main ul {
     list-style-type: none;
-    font-size: 18px;
   }
   .wrapper main ul .achievements {
     margin: 50px 20px 30px 20px;
@@ -145,7 +144,7 @@
   }
   .wrapper main ul .achievements .content .title {
     color: #142a52;
-    font-size: 25px;
+    font-size: 26px;
     -ms-grid-column: 2;
         grid-column-start: 2;
     grid-column-end: 3;
@@ -163,6 +162,7 @@
     color: #515152;
     border-top: 1px solid #515152;
     padding-top: 10px;
+    font-size: 18px;
   }
   .wrapper main ul .achievements::after {
     position: absolute;
@@ -185,7 +185,7 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) and (min-width: 425px) {
   body {
     background-color: #ececec;
     padding: 0px;
@@ -213,7 +213,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .wrapper header .profilepic {
-    margin: 10px 0 10px 0;
+    margin: 10px auto 10px auto;
     width: 250px;
     height: 250px;
     background: #ececec;
@@ -222,7 +222,7 @@
             box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(94, 104, 121, 0.288);
   }
   .wrapper header .name {
-    font-size: 30px;
+    font-size: 32px;
     color: #515152;
     text-align: center;
     margin: 30px auto 30px auto;
@@ -292,7 +292,6 @@
         -ms-flex-direction: column;
             flex-direction: column;
     list-style-type: none;
-    font-size: 18px;
     padding: 0;
   }
   .wrapper main ul .achievements {
@@ -331,7 +330,7 @@
   }
   .wrapper main ul .achievements .content .title {
     color: #142a52;
-    font-size: 25px;
+    font-size: 22px;
     -ms-grid-column: 2;
         grid-column-start: 2;
     grid-column-end: 3;
@@ -349,6 +348,208 @@
     color: #515152;
     border-top: 1px solid #515152;
     padding-top: 10px;
+    font-size: 16px;
+  }
+  .wrapper main ul .achievements::after {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+    -webkit-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .wrapper main ul .achievements:hover {
+    -webkit-transform: scale(1.01, 1.01);
+            transform: scale(1.01, 1.01);
+  }
+  .wrapper main ul .achievements::hover::after {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    background-color: #ececec;
+    padding: 0px;
+    margin: 0px;
+  }
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #ececec;
+    width: 100%;
+    padding: 0;
+    margin: 25px 0 0 0;
+    color: #515152;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .wrapper header .profilepic {
+    margin: 10px auto 10px auto;
+    width: 250px;
+    height: 250px;
+    background: #ececec;
+    border-radius: 50%;
+    -webkit-box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(94, 104, 121, 0.288);
+            box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(94, 104, 121, 0.288);
+  }
+  .wrapper header .name {
+    font-size: 28px;
+    color: #515152;
+    text-align: center;
+    margin: 30px auto 30px auto;
+  }
+  .wrapper nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper nav .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .wrapper nav .navbar .navlist {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper nav .navbar .navlist li {
+    width: 33%;
+    padding: 0;
+    margin: 0;
+  }
+  .wrapper nav .navbar .navlist a {
+    height: 40px;
+    width: 80%;
+    margin: 0px 10% 0px 10%;
+    padding: 10px 0px 0px 0px;
+    -webkit-box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(94, 104, 121, 0.288);
+            box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(94, 104, 121, 0.288);
+    border-radius: 15px;
+    text-align: center;
+    color: #515152;
+    -webkit-transition: -webkit-box-shadow 0.5s ease-in-out;
+    transition: -webkit-box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  }
+  .wrapper nav .navbar .navlist a:link, .wrapper nav .navbar .navlist a:visited {
+    color: #515152;
+    text-decoration: none;
+  }
+  .wrapper nav .navbar .navlist a::after {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+    -webkit-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .wrapper nav .navbar .navlist a:hover {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  .wrapper nav .navbar .navlist a::hover::after {
+    opacity: 1;
+  }
+  .wrapper main {
+    text-align: center;
+    width: 100%;
+  }
+  .wrapper main ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+  }
+  .wrapper main ul .achievements {
+    margin: 20px 15px 20px 15px;
+    min-height: 75px;
+    -webkit-box-shadow: 10px 10px 12px rgba(94, 104, 121, 0.288), -10px -10px 12px rgba(255, 255, 255, 0.5);
+            box-shadow: 10px 10px 12px rgba(94, 104, 121, 0.288), -10px -10px 12px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    color: #515152;
+  }
+  .wrapper main ul .achievements a:link, .wrapper main ul .achievements a:visited {
+    text-decoration: none;
+  }
+  .wrapper main ul .achievements .content {
+    margin: 0;
+    padding: 15px 10px 15px 10px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10% auto 10%;
+        grid-template-columns: 10% auto 10%;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    -webkit-transition: -webkit-box-shadow 0.5s ease-in-out;
+    transition: -webkit-box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  }
+  .wrapper main ul .achievements .content .image {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .wrapper main ul .achievements .content .title {
+    color: #142a52;
+    font-size: 20px;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .wrapper main ul .achievements .content .description {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    color: #515152;
+    border-top: 1px solid #515152;
+    padding-top: 10px;
+    font-size: 15px;
   }
   .wrapper main ul .achievements::after {
     position: absolute;
