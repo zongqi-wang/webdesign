@@ -3,8 +3,8 @@ $light-shadow: rgba(255, 255, 255,0.5);
 $dark-shadow: rgba(94, 104, 121, .288);
 $font-color: #515152; 
 $font-color2: #142a52;
-$name-size-desktop: 36px;
-$title-size-desktop: 26px;
+$name-size-desktop: 34px;
+$title-size-desktop: 24px;
 $description-size-desktop: 18px;
 
 $name-size-tablet: 32px;
@@ -15,10 +15,13 @@ $name-size-mobile: 28px;
 $title-size-mobile: 20px;
 $description-size-mobile: 15px;
 
+$font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$font-backup: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 @media only screen and (min-width: 1000px) {
     body { 
         background-color: $main-color;
-        padding: 0px;
+        padding: 0px 0px 25px 0px;
         margin: 0px;
     }
     .wrapper{
@@ -40,7 +43,7 @@ $description-size-mobile: 15px;
         border-radius: 15px;
         outline: none;
         color: $font-color;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: $font;
 
         header{
             .profilepic{
@@ -62,21 +65,28 @@ $description-size-mobile: 15px;
         }
 
         nav{
+            width: 100%;
+            padding: 0;
+            margin: 0;
             .navbar{
                 display: flex;
                 flex-direction: row;
-                height: 50px;
-                width: 600px;
-                margin: 0;
-                padding: 0;
                 list-style-type: none;
+
+                height: 50px;
+                width: 40%;
+                margin: 0;
+                padding: 0px 30% 0px 30%;
                 
-                padding-left: 150px;
+                // padding-left: 150px;
                 .navlist{
+                    width: 33%;
+                    margin: 0;
                     a{
                         height: 40px;
-                        width: 100px;
-                        margin: 0px 25px 0px 25px;
+                        width: 80%;
+                        max-width: 100px;
+                        margin: 0 10% 0 10%;
                         padding: 10px 0px 0px 0px;
                         box-shadow: -5px -5px 10px $light-shadow, 
                         5px 5px 10px $dark-shadow;
@@ -117,6 +127,7 @@ $description-size-mobile: 15px;
             width:100%;
 
             ul{
+                padding: 0;
                 list-style-type: none;
                 .achievements{
                     margin: 50px 20px 30px 20px;
@@ -206,7 +217,7 @@ $description-size-mobile: 15px;
         margin: 25px 0 0 0;
 
         color: $font-color;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: $font;
 
         header{
             .profilepic{
@@ -358,7 +369,7 @@ $description-size-mobile: 15px;
 @media only screen and (max-width: 425px){
     body { 
         background-color: $main-color;
-        padding: 0px;
+        padding: 0px 0px 0px 0px;
         margin: 0px;
     }
     .wrapper{
@@ -372,7 +383,7 @@ $description-size-mobile: 15px;
         margin: 25px 0 0 0;
 
         color: $font-color;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: $font;
 
         header{
             .profilepic{
@@ -400,9 +411,9 @@ $description-size-mobile: 15px;
                 display: flex;
                 flex-direction: row;
                 height: 50px;
-                width: 100%;
+                width: 96%;
                 margin: 0;
-                padding: 0;
+                padding: 0px 2% 0px 2%;
                 list-style-type: none;
                 
                 .navlist{            
