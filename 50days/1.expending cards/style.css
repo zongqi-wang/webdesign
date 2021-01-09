@@ -54,25 +54,25 @@ body {
 }
 
 #panel1{
-  background-image: url(https://i.imgur.com/oCSF1cs.jpg);
+  background-image: url("https://i.imgur.com/oCSF1cs.jpg");
 }
 
 #panel2{
-  background-image: url(https://i.imgur.com/DpRrfeb.jpg);
+  background-image: url("https://i.imgur.com/DpRrfeb.jpg");
 }
 #panel3{
-  background-image: url(https://i.imgur.com/rvPpSKH.jpg);
+  background-image: url("https://i.imgur.com/rvPpSKH.jpg");
 }
 
 #panel4{
-  background-image: url(https://i.imgur.com/LCbtNZD.jpeg);
+  background-image: url("https://i.imgur.com/LCbtNZD.jpeg");
 }
 #panel5{
-  background-image: url(https://i.imgur.com/pN6lpLr.jpeg);
+  background-image: url("https://i.imgur.com/pN6lpLr.jpeg");
 }
 
 #panel6{
-  background-image: url(https://i.imgur.com/scKHvN6.jpeg);
+  background-image: url("https://i.imgur.com/scKHvN6.jpeg");
 }
 
 @media(max-width: 480px){
